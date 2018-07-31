@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Google Display Font';
+    src: url('https://fonts.gstatic.com/s/googlesansdisplay/v5/ea8FacM9Wef3EJPWRrHjgE4B6CnlZxHVDv79pw.woff') format('woff');
+  }
+
+* {
+  font-family: 'Google Display Font';
+  margin: 0;
+  padding: 0;
+  color: #eee
+}
+
+html, body {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  height: 10%;
+  width: 100%;
+  font-size: 24px;
+  color: #eee;
+}
+
+nav a:hover {
+  font-size: 32px;
+}
+
+header {
+  padding: 5%;
+  height: 72%;
+  background-color: #666;
+}
+
+header #img-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#img-box img {
+  max-width: 20%;
+  border-radius: 10px;
+}
+
+#img-box h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
