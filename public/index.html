@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Michael55555</title>
+  <style>
+    body, button {
+      font-family: Consolas;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+    aside {
+      background-color: #EBEBEB;
+      height: 100vh;
+      width: 30vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 35%;
+      border-radius: 100%;
+    }
+
+    button {
+      height: 10%;
+      width: 40%;
+      margin-top: 5%;
+      font-size: 150%;
+      border: none;
+    }
+
+    .section {
+      width: 70vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .section h1, .section h2, .section h3 {
+      padding-left: 20%;
+      color: grey;
+    }
+
+    h1 {
+      font-size: 10vmin;
+    }
+
+    .primary {
+      background-color: #47C0FF;
+    }
+
+    .breeze {
+      background-color: #47FF97;
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <img src="avatar.png">
+    <h2>Michael55555</h2>
+    <button class="primary">Projects</button>
+    <button class="breeze">Hire Now!</button>
+  </aside>
+  <div class="section">
+    <h1>Welcome!</h1>
+    <h2 class="element">I'm a Node.js developer!</h2>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+  <script>
+    let typed = new Typed('.element', {
+      strings: ['', "I'm a Node.js developer", "I'm a frontend developer!" , "I'm a fullstack developer", "I'm a backend developer"],
+      typeSpeed: 50,
+      cursorChar: '',
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>

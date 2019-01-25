@@ -1,0 +1,23 @@
+{
+  "name": "michael55555.github.io",
+  "version": "1.0.0",
+  "description": "This is the Website of Michael55555.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael55555/michael55555.github.io.git"
+  },
+  "author": "Michael55555",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael55555/michael55555.github.io/issues"
+  },
+  "homepage": "https://github.com/Michael55555/michael55555.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "typed.js": "^2.0.9"
+  }
+}
