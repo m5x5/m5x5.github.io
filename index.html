@@ -70,11 +70,13 @@
       height: 100vh;
     }
 
-    h1, .typed-cursor {
+    h1,
+    .typed-cursor {
       color: black;
       font-weight: bold;
       font-size: 60px;
       display: inline;
+      min-height: 120px;
     }
 
     h2 {
@@ -92,30 +94,42 @@
       border-radius: 5px;
       background-color: transparent;
     }
+
     header {
       margin: 20% 0 0 20%;
     }
 
     .typed-cursor {
-        opacity: 1;
-        animation: blink .7s infinite;
+      opacity: 1;
+      animation: blink .7s infinite;
     }
 
     @keyframes blink {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
     .x18 {
       font-size: 18px;
       padding: 2px 10px 2px 2px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      aside, body, html {
+        width: 100vw;
+      }
+      body {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -134,7 +148,9 @@
   </aside>
   <div class="section">
     <header>
-      <h1 class="element">I'm a node.js developer!</h1><br>
+      <div style="height:150px">
+        <h1 class="element">I'm a node.js developer!</h1>
+      </div><br>
       <button class="primary">Hire now</button>
       <button class="breeze">Projects</button>
     </header>
