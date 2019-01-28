@@ -7,186 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700,800,900" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.3.92/css/materialdesignicons.min.css">
-  <style>
-    body,
-    button {
-      font-family: Montserrat;
-    }
-
-    body {
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-    }
-
-    aside {
-      background-color: #E8E8E8;
-      height: 100vh;
-      width: 22vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .menu {
-      background-color: #CECECE;
-      width: 70%;
-      padding: 15%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    div li {
-      list-style-type: none;
-      font-size: 15px;
-      font-weight: bold;
-      padding: 5%;
-    }
-
-    div li:hover {
-      background-color: #0494DF;
-      color: white;
-    }
-
-    img {
-      width: 35%;
-      border-radius: 100%;
-      box-shadow: 3px 3px 3px #AAA;
-    }
-
-    button {
-      height: 71px;
-      width: 365px;
-      margin-top: 5%;
-      font-size: 29px;
-      border: none;
-      font-weight: bold;
-      max-width: 50vw;
-    }
-
-    .section {
-      width: 70vw;
-      height: 100vh;
-    }
-
-    .profile {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    h1,
-    .typed-cursor {
-      color: black;
-      font-weight: bold;
-      font-size: 60px;
-      display: inline;
-      min-height: 120px;
-    }
-
-    h2 {
-      font-size: 23px;
-    }
-
-    .primary {
-      background-color: #0494DF;
-      color: white;
-      border-radius: 5px;
-    }
-
-    .breeze {
-      border: 2px solid lightgrey;
-      border-radius: 5px;
-      background-color: transparent;
-    }
-
-    header {
-      margin: 20% 0 0 20%;
-    }
-
-    .typed-cursor {
-      opacity: 1;
-      animation: blink .7s infinite;
-    }
-
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .x18 {
-      font-size: 18px;
-      padding: 2px 10px 2px 2px;
-    }
-
-    #menu-icon {
-      display: none;
-    }
-
-    @media screen and (max-width: 1000px) {
-
-      aside,
-      body,
-      html {
-        width: 100vw;
-      }
-
-      aside {
-        height: 15vh;
-        justify-content: space-around;
-        flex-direction: row;
-      }
-
-      .menu {
-        display: none;
-      }
-
-      body {
-        flex-direction: column;
-      }
-
-      img {
-        width: 10vw;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px #AAA;
-      }
-
-      .profile {
-        flex-direction: row;
-        width: 55vw;
-        justify-content: space-between;
-        height: 100%;
-        max-width: 200px;
-      }
-
-      #menu-icon {
-        font-size: 8vw;
-        display: block;
-      }
-
-      h2 {
-        font-size: 100%;
-      }
-
-      h1 {
-        font-size: 7.5vw;
-        line-height: 7.5vw;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -206,8 +27,8 @@
   </aside>
   <div class="section">
     <header>
-      <div style="height:150px">
-        <h1 class="element">I'm a node.js developer!</h1>
+      <div style="height:15vw; max-height:150px;">
+        <h1 class="element"></h1>
       </div><br>
       <button class="primary">Hire now</button>
       <button class="breeze">Projects</button>
@@ -216,8 +37,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
   <script>
     let typed = new Typed('.element', {
-      strings: ['I\'m a node.js developer', "I'm a node.js developer", "I'm a frontend developer", "I'm a fullstack developer", "I'm a backend developer"],
+      strings: ["I'm a node.js developer", "I'm a frontend developer", "I'm a fullstack developer", "I'm a backend developer"],
       typeSpeed: 80,
+      startDelay: 1200,
+      backSpeed: 30,
+      backDelay: 1200,
       cursorChar: '_',
       loop: true,
     });
