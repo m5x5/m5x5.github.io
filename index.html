@@ -11,12 +11,30 @@
   </head>
 
   <body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyB4PYOXPwM_wnijqD33Ag3nnqZlw0oF5do",
+        authDomain: "mike-248910.firebaseapp.com",
+        databaseURL: "https://mike-248910.firebaseio.com",
+        projectId: "mike-248910",
+        storageBucket: "mike-248910.appspot.com",
+        messagingSenderId: "909075904893",
+        appId: "1:909075904893:web:691fa10d082f1933c3b414",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+
+      const db = firebase.firestore();
+    </script>
+    <script src="/script.js"></script>
     <div class="wrapper">
       <nav>
         <span id="brand-name">Michael Peters</span>
-        <a>Reviews</a>
-        <a>Projects</a>
-        <a class="btn btn-sm">Contact</a>
+        <a href="#reviews-title">Reviews</a>
+        <a href="projects">Projects</a>
+        <a class="btn btn-sm" href="#contact">Contact</a>
       </nav>
     </div>
     <div class="wrapper">
@@ -27,8 +45,8 @@
         </h1>
         <img src="avatar.jpeg" alt="Developer Logo" id="profile-avatar" />
         <div>
-          <button class="btn-primary">See my work</button>
-          <button class="btn-secondary">Let's talk!</button>
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn btn-secondary" href="#contact">Let's talk!</a>
         </div>
       </div>
     </div>
@@ -39,7 +57,7 @@
           <div>Progress Quicker</div>
           <div>Attract</div>
         </div>
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         <div class="project card">
           <div>
             <h3>Truehaven</h3>
@@ -70,28 +88,42 @@
         </div>
         <h2 id="contact-title">Contact</h2>
         <div id="contact">
-          <div>
+          <form>
             <div>
               <label for="name">Name</label>
-              <input type="text" name="name" />
+              <input id="name" type="text" name="name" required />
             </div>
             <div>
               <label for="email">E-Mail</label>
-              <input type="email" name="email" />
+              <input id="email" type="email" name="email" required />
             </div>
             <div id="contact-message">
               <label for="message">Message</label>
-              <textarea name="message"></textarea>
+              <textarea id="message" name="message" required></textarea>
             </div>
-            <button>Send</button>
-          </div>
+            <button id="submit-button">Send</button>
+          </form>
           <div>
             <label>Or find me on</label>
             <div>
-              <a class="btn btn-secondary">Discord</a>
-              <a class="btn btn-secondary">GitHub</a>
-              <a class="btn btn-secondary">LinkedIn</a>
-              <a class="btn btn-secondary">Reddit</a>
+              <a class="btn btn-secondary" href="https://discord.gg/yQaqr8E7vf"
+                >Discord</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://github.com/Michael55555/"
+                >GitHub</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://www.linkedin.com/in/michael-peters-de/"
+                >LinkedIn</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://www.reddit.com/user/HyperNerd5"
+                >Reddit</a
+              >
             </div>
           </div>
         </div>

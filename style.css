@@ -63,6 +63,11 @@ h3 {
   font-size: var(--h3-size);
 }
 
+a {
+  color: var(--color);
+  text-decoration: none;
+}
+
 nav {
   font-weight: 500;
   display: flex;
@@ -124,6 +129,17 @@ button,
   background: var(--orange);
   font-family: "Rubik";
   text-align: center;
+  text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+}
+
+button:active,
+.btn:active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
 }
 
 .btn-sm {
@@ -226,7 +242,7 @@ p {
   margin: 0 0 0.5rem 0.1rem;
 }
 
-#contact > div:first-child {
+#contact > form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
@@ -263,6 +279,7 @@ input {
   width: 100%;
   box-sizing: border-box;
   font-size: var(--font-size);
+  font-family: var(--font-family);
 }
 
 textarea {
@@ -335,5 +352,15 @@ label {
 
   #contact > div:last-child > h3 {
     margin-top: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact > form {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-message {
+    grid-column: span 1;
   }
 }
