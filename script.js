@@ -4,6 +4,7 @@ onload = () => {
   const email = document.getElementById("email");
   const message = document.getElementById("message");
   const form = document.querySelector("form");
+  const modal = document.querySelector("#modal");
 
   submitButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -16,11 +17,14 @@ onload = () => {
         email: email.value,
         message: message.value,
       })
-      .then(() => (submitButton.textContent = "Thanks for reaching out!"))
-      .catch((err) => {
-        console.log(err);
-        submitButton.textContent = "Thanks for reaching out!";
-      });
+      .then(() => {
+        modal.classList.add("active");
+        setTimeout(() => {
+          modal.classList.add("inactive");
+          modal.classList.remove("active");
+        }, 3000);
+      })
+      .catch((err) => {});
   });
 
   [name, email, message].forEach((input) => {
@@ -28,7 +32,6 @@ onload = () => {
       input.style.border = "none";
     });
     input.addEventListener("focusout", (e) => {
-      console.log("Out of focus :,-(");
       validate(name, email, message);
     });
   });
