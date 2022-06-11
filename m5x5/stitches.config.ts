@@ -9,6 +9,13 @@ export const { styled, css, globalCss, getCssText } = createStitches({
     fonts: {
       default: "Poppins, sans-serif",
     },
+    space: {
+      verticalPadding: "8rem",
+    },
+    sizes: {
+      pageWidth:
+        "clamp(calc(100vw - $space$verticalPadding), calc(100% - $space$verticalPadding), 1200px)",
+    },
   },
 });
 

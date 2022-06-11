@@ -9,7 +9,7 @@ const Container = styled("div", {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem",
+    padding: "1rem 2rem",
     flexFlow: "row",
 
     "> div": {
