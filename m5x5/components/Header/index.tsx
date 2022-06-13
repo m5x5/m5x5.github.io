@@ -1,5 +1,5 @@
-import { styled } from "../../../stitches.config";
-import Button from "../Button";
+import { styled } from "../../stitches.config";
+import Button from "../common/Button";
 import HeaderBackgroundText from "./BackgroundText";
 import HeaderGreeting from "./Greeting";
 import HeaderPicture from "./Picture";
@@ -12,6 +12,7 @@ const Container = styled("div", {
   width: "$pageWidth",
   margin: "0 auto",
   paddingTop: "7rem",
+  marginBottom: "14rem",
 
   "> .action-buttons": {
     display: "flex",
