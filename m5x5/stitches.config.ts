@@ -13,8 +13,7 @@ export const { styled, css, globalCss, getCssText } = createStitches({
       verticalPadding: "8rem",
     },
     sizes: {
-      pageWidth:
-        "clamp(calc(100vw - $space$verticalPadding), calc(100% - $space$verticalPadding), 1200px)",
+      pageWidth: "clamp(250px, calc(100vw - $space$verticalPadding), 1200px)",
     },
   },
 });

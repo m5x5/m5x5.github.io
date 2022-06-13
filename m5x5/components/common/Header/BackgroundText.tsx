@@ -4,6 +4,8 @@ const Container = styled("div", {
   width: "$pageWidth",
   maxWidth: "$pageWidth",
   overflow: "hidden",
+  gridColumn: "1 / span 2",
+  gridRow: "1 / span 1",
 });
 
 const Text = styled("h1", {

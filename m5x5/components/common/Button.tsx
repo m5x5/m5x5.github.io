@@ -10,6 +10,16 @@ const Button = styled("button", {
   lineHeight: "2.5rem",
   padding: "1rem 2.5rem",
   borderRadius: "5rem",
+  fontWeight: "500",
+
+  variants: {
+    variant: {
+      secondary: {
+        color: "$primary",
+        backgroundColor: "#D3E4F1",
+      },
+    },
+  },
 });
 
 export default Button;
