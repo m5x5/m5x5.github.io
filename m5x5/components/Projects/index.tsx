@@ -1,5 +1,6 @@
 import { styled } from "../../stitches.config";
 import Button from "../common/Button";
+import Card from "../common/Card";
 
 const Container = styled("div", {
   margin: "0 auto",
@@ -15,6 +16,8 @@ const Container = styled("div", {
   },
 });
 
+const Grid = styled("div", {});
+
 export default function Projects() {
   return (
     <Container>
@@ -27,6 +30,15 @@ export default function Projects() {
         <Button outline>Nest.js</Button>
         <Button outline>Three.js</Button>
       </div>
+      <Grid>
+        <Card
+          title="Posturely"
+          imageUrl="/images/projects/posturely.jpg"
+          description="A webapp that alerts its users if their posture is bad."
+          viewLink="https://nestjs.com"
+          githubLink="https://github.com/nestjs/nest"
+        />
+      </Grid>
     </Container>
   );
 }
