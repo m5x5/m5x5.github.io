@@ -18,6 +18,17 @@ const Button = styled("button", {
         color: "$primary",
         backgroundColor: "#D3E4F1",
       },
+      blue: {
+        color: "#D3E4F1",
+        backgroundColor: "#098AF3",
+      },
+    },
+    outline: {
+      true: {
+        border: "2px solid $primary",
+        backgroundColor: "transparent",
+        color: "$primary",
+      },
     },
   },
 });

@@ -28,4 +28,8 @@ export const globalStyles = globalCss({
     width: "100%",
     margin: "0px",
   },
+  h1: {
+    fontSize: "5rem",
+    margin: "0",
+  },
 });
