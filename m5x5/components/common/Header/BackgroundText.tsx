@@ -13,7 +13,7 @@ const Text = styled("h1", {
   fontSize: "20.5rem",
   color: "white",
   margin: "0",
-  marginTop: "7rem",
+  marginTop: "3rem",
   lineHeight: "1",
   textShadow: "1rem 1rem 3rem rgba(229, 237, 241, 0.75)",
   fontWeight: "900",

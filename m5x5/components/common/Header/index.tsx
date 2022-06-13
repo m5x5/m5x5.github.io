@@ -11,6 +11,7 @@ const Container = styled("div", {
   gridAutoFlow: "column",
   width: "$pageWidth",
   margin: "0 auto",
+  paddingTop: "7rem",
 
   "> .action-buttons": {
     display: "flex",
