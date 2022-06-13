@@ -6,6 +6,7 @@ const Container = styled("div", {
   overflow: "hidden",
   gridColumn: "1 / span 2",
   gridRow: "1 / span 1",
+  userSelect: "none",
 });
 
 const Text = styled("h1", {
